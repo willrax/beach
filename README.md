@@ -3,6 +3,8 @@ Beach
 
 Expect things to change as I work on this.
 
+![dance](http://c.willrax.com/U5ss/Screen%20Shot%202014-02-25%20at%207.33.33%20am.png)
+
 Small Sinatra app to host webhook services for slack.com
 
 Easiest to host on heroku.
