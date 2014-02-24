@@ -1,7 +1,7 @@
 Beach
 ============
 
-Expect things to change as I work on this.
+Expect things to change as I work on this. This app contains a gem that is powered by Giphy. It's your responsibility to get a production API if you want to use this fully. Otherwise switch out the gem and change the gif service. 
 
 ![dance](http://c.willrax.com/U5ss/Screen%20Shot%202014-02-25%20at%207.33.33%20am.png)
 
