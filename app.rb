@@ -10,14 +10,10 @@ require "./slack_bot"
 require "./slack_params"
 require "./services/base_service"
 
-get "/test" do
-  "Hello, World"
-end
-
 post "/gif" do
   slack_params = SlackParams.new(params)
-  service = GifService.new(slack_params)
+  slack_service = GifService.new(slack_params)
 
-  SlackBot.say(slack_params, service.message)
+  SlackBot.say(slack_params, slack_service)
   status 200
 end

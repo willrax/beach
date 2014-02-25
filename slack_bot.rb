@@ -1,14 +1,14 @@
 class SlackBot
   include HTTParty
 
-  def self.say(params, message)
+  def self.say(params, service)
     url = "https://#{ENV['BASE_URL']}/services/hooks/incoming-webhook?token=#{ENV['TOKEN']}"
 
     body = {
-      "channel" => "#{params.channel_id}",
-      "username" => "GifBot",
-      "text" => message,
-      "icon_emoji" => ":trollface:"
+      "channel" => service.channel_id,
+      "username" => service.username,
+      "text" => service.message,
+      "icon_emoji" => service.emoji
     }.to_json
 
     puts HTTParty.post(url, { body: body })
