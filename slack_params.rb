@@ -9,8 +9,8 @@ class SlackParams
     @channel_id = params[:channel_id]
     @channel_name = params[:channel_name]
     @user_id = params[:user_id]
-    @user_name = params[:user_id]
-    @user_name = params[:command]
+    @user_name = params[:user_name]
+    @command = params[:command]
     @text = params[:text]
   end
 end
