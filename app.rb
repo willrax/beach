@@ -17,3 +17,11 @@ post "/gif" do
   SlackBot.say(slack_params, slack_service)
   status 200
 end
+
+post "/slap" do
+  slack_params = SlackParams.new(params)
+  slack_service = SlapService.new(slack_params)
+
+  SlackBot.say(slack_params, slack_service)
+  status 200
+end

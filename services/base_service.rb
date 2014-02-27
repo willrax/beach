@@ -2,6 +2,7 @@ class BaseService
   attr_reader :params
 
   require "./services/gif_service"
+  require "./services/slap_service"
 
   def initialize(params)
     @params = params
